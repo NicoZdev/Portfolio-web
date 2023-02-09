@@ -20,8 +20,9 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 5px;
-    font-family: 'Righteous', cursive;
-
+    font-family: monospace;
+    font-size: 20px;
+    z-index: +5;
 }
 a {
     text-decoration: none;
@@ -148,4 +149,27 @@ button::before {
 
 @keyframes blink {
     50% {border-color: transparent}
+}
+
+.copyright {
+    width: 1343px;
+    text-align: center;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.galeria {
+    margin: 10px 39px;
+    float: left;
+    width: 250px;
+}
+
+.galeria img{
+    width: 30%;
+    height: auto;
+}
+.pie {
+    text-align: center;
+    padding: 10px;
 }
