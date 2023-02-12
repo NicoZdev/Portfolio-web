@@ -6,6 +6,7 @@
     <meta name="viewport" content="width-device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortFolio</title>
+    <link rel="icon" href="Logo ZN.jpg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,19 +16,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
-<body>
+<body >
   <div class="todo">
   <div id="contcarga">
     <div id="carga"></div>
   </div>
     <section>
-      <nav class="navegar">
+      <nav class="navegar" id="barra">
         <img src="Logo ZN.jpg" alt="Logo" width="3.2%">
         <a href="#Inicio">Incio</a>
         <a href="#SobreMi">Sobre mi</a>
         <a href="#Proyectos">Proyectos</a>
         <a href="#Tecnologias">Tecnologias</a>
         <a href="#Contacto">Contacto</a>
+        <label for="toggle" id="darkmode"><img src="sol.png" width="175%"></label>
+        <input type="checkbox" id="toggle">
       </section>
     <header id="Inicio">
       <h1 class="name">Nicolás Zarantonello</h1>
@@ -36,6 +39,7 @@
     <section id="SobreMi" class="sobremi">
       <h4>Sobre mi:</h4>
       <br>
+
        <p>
         Hola, mi nombre es Nicolás Zarantonello, me encanta la programación y aprender sobre la misma.
         Me gusta explorar nuevos proyectos y descubrir cosas nuevas.
@@ -85,32 +89,32 @@
        <br>
   <div class="contecno">
     <div class="galeria">
-     <figure class="foto">
-        <img src="html-5.png" alt="Html5">
+     <figure class="foto" id="html">
+        <img src="htmlW.png" alt="Html5">
       <div class="pie">
         <p>Html</p>
       </div>
      </figure>
     </div>
     <div class="galeria">
-      <figure class="foto">
-        <img src="css-3.png" alt="Css3">
+      <figure class="foto" id="css">
+        <img src="cssW.png" alt="Css3">
       <div class="pie">
         <p>Css</p>
       </div>
      </figure>
     </div>
     <div class="galeria">
-      <figure class="foto">
-        <img src="secuencia-de-comandos-de-java.png" alt="Javascript">
+      <figure class="foto" id="java">
+        <img src="JavaW.png" alt="Javascript">
       <div class="pie">
         <p>Javascript</p>
       </div>
      </figure>
     </div>
     <div class="galeria">
-      <figure class="foto">
-        <img src="logotipo-de-python-language.png" alt="Python">
+      <figure class="foto" id="python">
+        <img src="pythonW.png" alt="Python">
       <div class="pie">
         <p>Python</p>
       </div>
