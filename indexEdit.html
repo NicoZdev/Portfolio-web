@@ -29,7 +29,7 @@
         <a href="#Proyectos">Proyectos</a>
         <a href="#Tecnologias">Tecnologias</a>
         <a href="#Contacto">Contacto</a>
-        <a href="login.html">Ingresar</a>
+        <a href="index.html">Cerrar Sesion</a>
         <label for="toggle" id="darkmode"><img src="sol.png" width="175%"></label>
         <input type="checkbox" id="toggle">
       </section>
@@ -40,7 +40,7 @@
     <section id="SobreMi" class="sobremi">
       <h4>Sobre mi:</h4>
       <br>
-       <p id="texto-editable">
+       <p contenteditable="true" id="texto-editable">
         Hola, mi nombre es Nicolás Zarantonello, me encanta la programación y aprender sobre la misma.
         Me gusta explorar nuevos proyectos y descubrir cosas nuevas.
         Soy responsable y perseverante, siempre dispuesto al trabajo en equipo para lograr los objetivo.
@@ -48,6 +48,7 @@
         <br>
         <a href="CV_nicoz.pdf" download="Cv NicoZ" target="_blank"><button class="cv">Descargar CV</button></a>
     </section>
+    <button onclick="guardarCambios()" class="guardar">Guardar cambios</button>
     <section id="Proyectos" class="proyectos">
       <h4>Proyectos en los que he estado trabajando:</h4>
       <br>

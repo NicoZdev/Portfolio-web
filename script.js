@@ -1,5 +1,3 @@
-document.write("");
-
 window.onload = function(){
     var contenedor = document.getElementById('contcarga');
 
@@ -10,6 +8,7 @@ window.onload = function(){
 let toggle=document.getElementById('toggle');
 let darkmode=document.getElementById('darkmode')
 let barra=document.getElementById('barra')
+
 toggle.addEventListener('change', (event)=>{
     let checked=event.target.checked;
     document.body.classList.toggle('dark')
@@ -28,4 +27,25 @@ toggle.addEventListener('change', (event)=>{
         python.innerHTML= '<img src="pythonW.png" alt="Python"><div class="pie"><p>Python</p></div>'
         angular.innerHTML= '<img src="AngularW.png" alt="Angular"><div class="pie"><p>Angular</p></div>'
     }
-})
+    if (document.body.classList.contains('dark')){
+    localStorage.setItem('dark-mode', 'true');
+    } else {
+        localStorage.setItem('dark-mode', 'false');
+    }
+});
+
+function guardarCambios() {
+    var nuevoTexto = document.getElementById("texto-editable").innerHTML;
+    
+    localStorage.setItem("texto-editable", nuevoTexto); 
+    
+    alert("Cambios guardados correctamente");
+  }
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    var textoGuardado = localStorage.getItem("texto-editable");
+    
+    if (textoGuardado) {
+      document.getElementById("texto-editable").innerHTML = textoGuardado;
+    }
+  });
