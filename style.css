@@ -135,7 +135,7 @@ header {
     font-weight: bold;
     position: relative;
 }
-button::before {
+button.cv::before {
     content: "";
     position: absolute;
     top: 0;
@@ -325,4 +325,21 @@ button::before {
     z-index: 1000;
     z-index:1;
     filter: blur(30px);
+}
+
+.guardar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 45%;
+    bottom: 150px;
+    cursor: pointer;
+    z-index: 1;
+    max-width: 260px;
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: aqua;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
