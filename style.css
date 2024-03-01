@@ -14,7 +14,7 @@ body {
 }
 .todo{
     width: 100%;
-    max-width: 1500px;
+    max-width: 2000px;
 }
 
 .navegar {
@@ -186,7 +186,7 @@ button.cv::before {
 
 .contecno{
     display: flex;
-    max-width: 1500px;
+    max-width: 2000px;
     width: 100%;
 }
 
@@ -210,7 +210,7 @@ button.cv::before {
 .contenedor{
     width: 100%;
     display: flex;
-    max-width: 1500px;
+    max-width: 2000px;
 }
 
 .tarjetas{
