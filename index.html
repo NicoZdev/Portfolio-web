@@ -3,142 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>PortFolio</title>
-    <link rel="icon" href="Logo ZN.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nicolás Zarantonello</title>
+    <link rel="icon" href="img/Logo ZN.jpg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Righteous&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Righteous&display=swap" rel="stylesheet">
 </head>
-<body >
+<body>
   <div class="todo">
-  <div id="contcarga">
-    <div id="carga"></div>
-  </div>
-    <section>
-      <nav class="navegar" id="barra">
-        <img src="Logo ZN.jpg" alt="Logo" width="3.2%">
-        <a href="#Inicio">Incio</a>
-        <a href="#SobreMi">Sobre mi</a>
+    <!-- Navbar -->
+    <nav class="navegar">
+      <img src="img/Logo ZN.jpg" alt="Logo" width="50">
+      <div class="menu" id="menu">
+        <a href="#Inicio">Inicio</a>
+        <a href="#SobreMi">Sobre mí</a>
         <a href="#Proyectos">Proyectos</a>
-        <a href="#Tecnologias">Tecnologias</a>
+        <a href="#Tecnologias">Tecnologías</a>
         <a href="#Contacto">Contacto</a>
-        <label for="toggle" id="darkmode"><img src="sol.png" width="175%"></label>
-        <input type="checkbox" id="toggle">
-      </section>
-    <header id="Inicio">
-      <h1 class="name">Nicolás Zarantonello</h1>
-      <p>Full Stack Developer</p>
-    </header>
-    <section id="SobreMi" class="sobremi">
-      <h4>Sobre mi:</h4>
-      <br>
-       <p id="texto-editable">
-        Hola, mi nombre es Nicolás Zarantonello, me encanta la programación y aprender sobre la misma.
-        Me gusta explorar nuevos proyectos y descubrir cosas nuevas.
-        Soy responsable y perseverante, siempre dispuesto al trabajo en equipo para lograr los objetivo.<br> Algunos de mis hobbies son la Mecanografía, los diferentes tipos de lenguajes de programación y la edicion de video.
-        </p>
-        <br>
-        <a href="CV_nicoz.pdf" download="Cv NicoZ" target="_blank"><button class="cv">Descargar CV</button></a>
-    </section>
-    <section id="Proyectos" class="proyectos">
-      <h4>Proyectos en los que he estado trabajando:</h4>
-      <br>
-      <div class="contenedor">
-        <div class="tarjetas">
-          <figure>
-            <img src="FondoProyect.jpg" alt="Proyecto1">
-            <div class="contenido">
-              <h3>Proyecto 1</h3>
-              <p> Descripcion del proyecto 1 -----------------------------------------------------------------------</p>
-              <a href="#pagina-del-proyecto">Ver proyecto</a>
-            </div>
-          </figure>
-        </div>
-        <div class="tarjetas">
-          <figure>
-            <img src="FondoProyect.jpg" alt="Proyecto2">
-            <div class="contenido">
-              <h3>Proyecto 2</h3>
-              <p> Descripcion del proyecto 2 -----------------------------------------------------------------------</p>
-              <a href="#pagina-del-proyecto">Ver proyecto</a>
-            </div>
-          </figure>
-        </div>
-        <div class="tarjetas">
-          <figure>
-            <img src="FondoProyect.jpg" alt="Proyecto3">
-            <div class="contenido">
-              <h3>Proyecto 3</h3>
-              <p> Descripcion del proyecto 3 -----------------------------------------------------------------------</p>
-              <a href="#pagina-del-proyecto">Ver proyecto</a>
-            </div>
-          </figure>
-        </div>
       </div>
-    </section>
-  <section id="Tecnologias" class="tecnologias">
-       <h4>Tecnologias que manejo hasta el momento:</h4>
-       <br>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Secciones del sitio -->
+    <main>
+      <header id="Inicio" class="hero-section">
+        <div class="background-intro"></div>
+        <h1 id="name"></h1>
+        <p>Full Stack Developer</p>
+    </header>    
+
+      <section id="SobreMi" class="sobremi">
+        <h2>Sobre mí:</h2>
+        <p>
+          Hola, mi nombre es Nicolás Zarantonello, me encanta la programación y aprender sobre la misma.
+          Me gusta explorar nuevos proyectos y descubrir cosas nuevas.
+          Soy responsable y perseverante, siempre dispuesto al trabajo en equipo para lograr los objetivos.
+          Algunos de mis hobbies son la mecanografía, los diferentes tipos de lenguajes de programación y la edición de video.
+        </p>
+        <a href="CV_nicoz.pdf" class="btn-cv" download="Nicolas_Zarantonello_CV">Descargar CV</a>
+      </section>
+
+<!-- Proyectos -->
+<section id="Proyectos" class="proyectos">
+  <h2>Proyectos en los que he trabajado:</h2>
+  <div class="tarjetas">
+      <figure class="tarjeta-proyecto">
+          <img src="img/LogoPigThrif.jpg" alt="Pig-Thrif">
+          <div class="contenido">
+              <h3>Pig Thrif</h3>
+              <p>Una aplicacion sencilla de control de gastos para dispositivos moviles, con una interfaz intuitiva donde podras agregar ganancias o restar gastos a tu saldo inicial.</p>
+              <a href="https://github.com/NicoZdev/Pig-Thrif" target="_blank">Ver proyecto en GitHub</a>
+              <a href="resources/PigThrif-v1.0.apk"> Descargar APK</a>
+          </div>
+      </figure>
+      <figure class="tarjeta-proyecto">
+          <img src="img/LogoBusTracker.png" alt="Bus-Tracker">
+          <div class="contenido">
+              <h3>Bus Tracker Victoria</h3>
+              <p>Un proyecto en grupo el cual busca facilitar el uso del transporte urbano en mi ciudad, con un mapa interactivo y una interfaz amigable y facil de entender.
+                <br><strong>Actualmente en desarrollo.</strong></p>
+              <a href="https://github.com/NicoZdev/Bus-Tracker" target="_blank">Ver proyecto en GitHub</a>
+              <a href="https://nicozdev.github.io/Bus-Tracker/" target="_blank"> Visitar Pagina</a>
+          </div>
+      </figure>
+      <figure class="tarjeta-proyecto">
+          <img src="img/FondoProyect.jpg" alt="Proyecto">
+          <div class="contenido">
+              <h3>Proyecto</h3>
+              <p>Descripción del proyecto.</p>
+              <a href="#pagina-del-proyecto" target="_blank">Ver proyecto en GitHub</a>
+          </div>
+      </figure>
+  </div>
+</section>
+
+<!-- Tecnologías -->
+<section id="Tecnologias" class="tecnologias">
+  <h2>Tecnologías que manejo:</h2>
   <div class="contecno">
     <div class="galeria">
-     <figure class="foto" id="html">
-        <img src="htmlW.png" alt="Html5">
-      <div class="pie">
-        <p>Html</p>
-      </div>
-     </figure>
+      <figure class="foto" id="html">
+        <img src="img/htmlW.png" alt="Html5">
+        <div class="pie"><p>HTML</p></div>
+      </figure>
     </div>
     <div class="galeria">
       <figure class="foto" id="css">
-        <img src="cssW.png" alt="Css3">
-      <div class="pie">
-        <p>Css</p>
-      </div>
-     </figure>
+        <img src="img/cssW.png" alt="Css3">
+        <div class="pie">
+          <p>Css</p>
+        </div>
+      </figure>
     </div>
     <div class="galeria">
       <figure class="foto" id="java">
-        <img src="javaW.png" alt="Javascript">
-      <div class="pie">
-        <p>Javascript</p>
-      </div>
-     </figure>
-    </div>
-    <div class="galeria">
-      <figure class="foto" id="python">
-        <img src="pythonW.png" alt="Python">
+        <img src="img/javaW.png" alt="Javascript">
+        <div class="pie">
+          <p>Javascript</p>
+        </div>
+    </figure>
+  </div>
+  <div class="galeria">
+    <figure class="foto" id="python">
+      <img src="img/pythonW.png" alt="Python">
       <div class="pie">
         <p>Python</p>
       </div>
-     </figure>
-    </div>
-    <div class="galeria">
-      <figure class="foto" id="angular">
-         <img src="AngularW.png" alt="Angular">
-       <div class="pie">
-         <p>Angular</p>
-       </div>
-      </figure>
-     </div>
+    </figure>
   </div>
-  </section>
-    <section class="botones" id="Contacto">
-        <a href="https://github.com/NicoZdev" target="_blank" class="fa fa-github"></a>
-        <a href="https://www.instagram.com/nicozarantonello/" target="_blank" class="fa fa-instagram"></a>
-        <a href="mailto:nicolaszarantonellodev@gmail.com" target="_blank" class="fa fa-google-plus"></a>
-        <a href="https://www.youtube.com/channel/UCK1LZfeb-r9EfwdOmerPL5g" target="_blank" class="fa fa-youtube"></a>
-        <a href="https://www.linkedin.com/in/nicolás-zarantonello-348579264/" target="_blank" class="fa fa-linkedin"></a>
-      </section>
-      <br>
-      <p class="copyright">Copyright © Todos los derechos reservados Nicolás Zarantonello</p>
-    </div>
-</body>
+  <div class="galeria">
+    <figure class="foto" id="angular">
+      <img src="img/AngularW.png" alt="Angular">
+      <div class="pie">
+        <p>Angular</p>
+      </div>
+    </figure>
+  </div>
+  </div>
+</section>
+
+<!-- Contacto -->
+<section id="Contacto" class="contacto">
+  <h2>Contacto</h2>
+  <div class="botones">
+    <a href="https://github.com/NicoZdev" target="_blank" class="fa fa-github"></a>
+    <a href="https://www.instagram.com/nicozarantonello/" target="_blank" class="fa fa-instagram"></a>
+    <a href="mailto:nicolaszarantonellodev@gmail.com" target="_blank" class="fa fa-google-plus"></a>
+    <a href="https://www.youtube.com/channel/UCK1LZfeb-r9EfwdOmerPL5g" target="_blank" class="fa fa-youtube"></a>
+    <a href="https://www.linkedin.com/in/nicolás-zarantonello-348579264/" target="_blank" class="fa fa-linkedin"></a>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <p class="copyright">Copyright © Todos los derechos reservados Nicolás Zarantonello</p>
+</footer>
+</div>
+
 <script src="script.js"></script>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+  }
+</script>
+</body>
 </html>
